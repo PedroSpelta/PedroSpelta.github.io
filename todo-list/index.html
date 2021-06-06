@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-do List</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="header">
+    <h1>
+      Lista de Tarefas
+    </h1>
+    <p id="funcionamento">
+      Clique duas vezes em um item para marcá-lo como completo<br>
+      Clique uma vez para selecionar uma tarefa
+    </p>
+  </div>
+  <div id="quadro-principal">
+    <input placeholder="Sua tarefa" type="text" id="texto-tarefa">
+    <div id="lista-tarefas-div">
+      <ul id="lista-tarefas"></ul>
+    </div>
+    <div id="abaixo-lista"></div>
+  </div>
+  <div class="linha">
+    <button class="botao" id="criar-tarefa" >
+      <p class="twa twa-heavy-plus-sign"></p>
+    </button>
+    <button class="botao" id="remover-selecionado" >Del</button>
+    <button class="botao" id="mover-cima" >⬆</button>
+    <button class="botao" id="mover-baixo" >⬇</button>
+    <button class="botao" id="salvar-tarefas" >
+      <p class="twa twa-file-folder"></p>
+    </button>
+  </div>
+  <div class="linha">
+    <button class="botao" id="apaga-tudo" >Deletar tudo</button>
+    <button class="botao" id="remover-finalizados" >Deletar finalizados</button>
+  </div>
+</body>
+<script src="script.js"></script>
+</html>
